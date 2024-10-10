@@ -6,29 +6,25 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 11:35:29 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/09 13:03:36 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:20:07 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "./includes/Animal.hpp"
 
-Animal::Animal(void)
+Animal::Animal(void) : _type("unknown")
 {
 	std::cout << "Default Animal constructor called\n";
-
-	this->_type = "unknown";
 }
 
-Animal::Animal(const std::string type)
+Animal::Animal(const std::string type) : _type(type)
 {
 	std::cout << "Parametric Animal constructor for " << type <<" called\n";
-
-	this->_type = type;
 }
 
 Animal::Animal(const Animal& copy)
 {
-	std::cout << "Copy Animal constructor called" << std::endl;
+	std::cout << "Copy Animal constructor called\n";
 	*this = copy;
 }
 
@@ -39,10 +35,20 @@ Animal::~Animal()
 
 Animal&	Animal::operator=(const Animal& copy)
 {
-	std::cout << "Animal assignment operator called" << std::endl;
+	std::cout << "Animal assignment operator called\n";
 
     if (this != &copy)
 		this->_type = copy._type;
 
 	return (*this);
+}
+
+std::string	Animal::getType() const
+{
+	return (this->_type);
+}
+
+void		Animal::makeSound() const
+{
+	std::cout << "* Unknown animal sound *\n";
 }

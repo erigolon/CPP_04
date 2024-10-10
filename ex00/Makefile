@@ -6,14 +6,18 @@
 #    By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/09 11:34:52 by erigolon          #+#    #+#              #
-#    Updated: 2024/10/09 12:43:11 by erigolon         ###   ########.fr        #
+#    Updated: 2024/10/10 15:42:27 by erigolon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= a.out
+NAME	= animals
 
 SRC		= main.cpp \
 			Animal.cpp \
+			Dog.cpp \
+			Cat.cpp \
+			WrongAnimal.cpp \
+			WrongCat.cpp
 			
 
 OBJ		= $(SRC:.cpp=.o)

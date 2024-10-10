@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 11:35:27 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/09 13:01:00 by erigolon         ###   ########.fr       */
+/*   Created: 2024/10/10 14:39:01 by erigolon          #+#    #+#             */
+/*   Updated: 2024/10/10 15:30:27 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef DOG_HPP
+# define DOG_HPP
 
-#include <iostream>
+# include "Animal.hpp"
 
-class Animal
+class  Dog : public Animal
 {
-protected:
-
-    std::string _type;
-
 public:
 
-    Animal(void);
-	Animal(const std::string type);
-	Animal(const Animal& copy);
+    		Dog();
+			Dog(const Dog &copy);
 
-    ~Animal();
+    		~Dog();
 
-	Animal&		operator=(const Animal& copy);
-    
+	Dog		&operator=(const Dog &copy);
+
+	void	makeSound() const;
+	
 };
 
 #endif
