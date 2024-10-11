@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 09:47:53 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/11 10:48:51 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:29:48 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,15 @@ Brain&	Brain::operator=(const Brain& copy)
 		*this->_ideas = *copy._ideas;
 
 	return (*this);
+}
+
+void	Brain::setIdea(std::string idea, int i)
+{
+	if (i >= 0 && i < 100)
+		this->_ideas[i] = idea;
+}
+
+std::string*	Brain::getIdeas()
+{
+	return (this->_ideas);
 }
