@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 11:35:00 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/11 10:58:08 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:21:44 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,16 @@ int	main()
     Cat copiedCat = originalCat; // Constructor por copia
     copiedCat = originalCat;     // Operador de asignación
 
+    // Prueba de cerebros
+    std::cout << "\nTesting brains:\n";
+    originalDog.getBrain()->setIdea("Soy guapo", 0);
+    std::string* ideasDOG = originalDog.getBrain()->getIdeas();
+    std::cout << ideasDOG[0] << std::endl;
+
+    originalCat.getBrain()->setIdea("Soy grande", 0);
+    std::string* ideasCAT = originalCat.getBrain()->getIdeas();
+    std::cout << ideasCAT[0] << std::endl;
+    
     std::cout << "\nTesting sounds:\n";
     // Hacer que los animales hagan sonidos
     for (int i = 0; i < ARRAY_SIZE; ++i) {

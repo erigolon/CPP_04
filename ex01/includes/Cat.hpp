@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:51:04 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/11 10:12:29 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:19:45 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ public:
     		~Cat();
 
 	Cat		&operator=(const Cat &copy);
+
+	Brain*	getBrain();
 
 	void	makeSound() const;
 	

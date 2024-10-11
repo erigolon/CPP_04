@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:38:42 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/11 10:56:43 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:12:34 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,11 @@ Dog&	Dog::operator=(const Dog& copy)
 	}
 
 	return (*this);
+}
+
+Brain*	Dog::getBrain()
+{
+	return (this->_brain);
 }
 
 void	Dog::makeSound() const

@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 09:46:48 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/11 10:48:42 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:07:18 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,9 @@ public:
     				~Brain();
 
 	Brain&			operator=(const Brain& copy);
+
+	void			setIdea(std::string idea, int i);
+	std::string*	getIdeas();
 
 };
 

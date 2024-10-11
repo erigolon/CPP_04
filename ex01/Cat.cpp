@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:50:04 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/11 10:57:09 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:20:02 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,11 @@ Cat&	Cat::operator=(const Cat& copy)
 	}
 
 	return (*this);
+}
+
+Brain*	Cat::getBrain()
+{
+	return (this->_brain);
 }
 
 void	Cat::makeSound() const
