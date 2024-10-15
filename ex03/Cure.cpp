@@ -6,7 +6,16 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:04:17 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/11 13:04:18 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/14 13:41:45 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "./includes/Cure.hpp"
+
+Cure::Cure()
+{
+}
+
+Cure::~Cure()
+{
+}

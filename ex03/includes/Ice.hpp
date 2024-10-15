@@ -6,7 +6,27 @@
 /*   By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:03:18 by erigolon          #+#    #+#             */
-/*   Updated: 2024/10/11 13:03:19 by erigolon         ###   ########.fr       */
+/*   Updated: 2024/10/14 13:42:27 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ICE_HPP
+# define ICE_HPP
+
+class Ice
+{
+private:
+
+
+
+public:
+
+	Ice();
+	~Ice();
+
+};
+
+
+
+
+# endif

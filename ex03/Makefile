@@ -6,18 +6,17 @@
 #    By: erigolon <erigolon@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/11 12:36:29 by erigolon          #+#    #+#              #
-#    Updated: 2024/10/11 12:37:07 by erigolon         ###   ########.fr        #
+#    Updated: 2024/10/14 13:39:16 by erigolon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= materials
 
 SRC		= main.cpp \
-			AAnimal.cpp \
-			Dog.cpp \
-			Cat.cpp \
-			Brain.cpp
-			
+			AMateria.cpp \
+			Character.cpp \
+			Cure.cpp \
+			Ice.cpp
 
 OBJ		= $(SRC:.cpp=.o)
 
